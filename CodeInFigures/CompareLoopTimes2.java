@@ -13,13 +13,13 @@ public class CompareLoopTimes2
       now = LocalDateTime.now();
       endTime = now.getNano();
       System.out.println("Time with prefix increment: " +
-         ((endTime1 - startTime1) / FACTOR + " milliseconds");
+         (endTime - startTime) / FACTOR + " milliseconds");
       now = LocalDateTime.now();
       startTime = now.getNano();
       for(int x = REPEAT; x >= 0; --x);
       now = LocalDateTime.now();
       endTime = now.getNano();
       System.out.println("Time with postfix increment: " +
-         ((endTime1 - startTime1) / FACTOR + " milliseconds");
+         (endTime - startTime) / FACTOR + " milliseconds");
    }
 }
